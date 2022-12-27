@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "_MainLayout";
+}
+
+<link href="~/Css/UserLayout.css" rel="stylesheet" />
+
+<div style="background-color: coral;">
+    <partial name="~/Views/Shared/UserPartialViews/Header.cshtml" />
+    <partial name="~/Views/Shared/UserPartialViews/Navbar.cshtml" />
+
+    <div class="container my-4 shadow" style=" min-height: 100vh; background-color: azure;">
+        @RenderBody()
+    </div>
+
+    <partial name="~/Views/Shared/UserPartialViews/Footer.cshtml" />
+</div>
